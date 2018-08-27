@@ -1,0 +1,6 @@
+{"status":"admin","warns":[],"first_name":"Ilyos","last_name":"","id":369616959,"username":"ilyosjr","_id":"PkxEUyDYkIPpRAF3"}
+{"status":"admin","warns":[],"first_name":"Dev boy","last_name":"","id":599758084,"username":"aspiron","_id":"g4jhRS8JGWpREaWL"}
+{"status":"member","warns":[],"first_name":"Saidolim","last_name":"","id":35286625,"username":"yordam_uz","_id":"qt2A7YEOzyzNeWoP"}
+{"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
+{"$$indexCreated":{"fieldName":"status","unique":false,"sparse":false}}
+{"$$indexCreated":{"fieldName":"username","unique":true,"sparse":true}}
