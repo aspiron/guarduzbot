@@ -66,7 +66,7 @@ module.exports = {
 	 * List of plugin names to be loaded.
 	 * See Readme in plugins directory for more details.
 	 */
-	plugins: ['restrictor','createHandler'],
+	plugins: ['createHandler'],
 
 	/**
 	 * @type {InlineKeyboardMarkup}
