@@ -15,7 +15,7 @@ const { getUser } = require('../stores/user');
             const dbUser = await getUser({ id: newMember.id });
 
             // if user is not in DB, he can't be banned.
-            if (dbUser === null) {
+            if (dbUser === null || dbUser.status === 'member') {
                 reply("You cannot write in this group"+
                         "PM me @sampleofbot"
                 );
@@ -36,14 +36,7 @@ const { getUser } = require('../stores/user');
                 });
             case 'banned':
                 return ctx.kickChatMember(dbUser.id);
-            case 'member':
-            reply("You cannot write in this group"+
-                        "PM me @sampleofbot"
-                );
 
-                return ctx.restrictChatMember(dbUser.id,{
-                    can_read_messages : true,
-                });
             default:
                 throw new Error(`Unexpected member status: ${dbUser.status}`);
             }
